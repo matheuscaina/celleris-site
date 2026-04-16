@@ -1,133 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MCB Consulting</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celleris Supply - Em Construção</title>
 
-<link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at 20% 30%, #1a0f3d, transparent 40%),
+                  radial-gradient(circle at 80% 70%, #0d2a5c, transparent 40%),
+                  #050508;
+      color: #fff;
+    }
+
+    .content {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      width: 180px;
+      margin-bottom: 30px;
+      filter: drop-shadow(0 0 15px rgba(123,92,255,0.3));
+    }
+
+    h1 {
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 48px;
+      font-weight: 300;
+      letter-spacing: 6px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #bbb;
+      max-width: 420px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 26px;
+      background: linear-gradient(90deg, #7b5cff, #3b82f6);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+      margin-bottom: 15px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(123,92,255,0.5);
+    }
+
+    .domain {
+      margin-top: 10px;
+      color: #7b5cff;
+      font-size: 14px;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+      color: #666;
+    }
+
+    /* 🔥 WhatsApp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+      z-index: 999;
+      transition: 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(37, 211, 102, 0.8);
+    }
+
+    .whatsapp-float svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+  </style>
 </head>
-
 <body>
 
-<canvas id="bg"></canvas>
+<div class="content">
+  <img src="img/celleris_logo.png" class="logo">
 
-<!-- HEADER -->
-<div class="header">
-  <img src="img/mcb_logo.png" class="logo">
+  <h1>NOSSO NOVO SITE</h1>
+  <h2>EM BREVE</h2>
 
-  <div class="menu">
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a class="menu-btn" href="https://wa.me/5511945178914" target="_blank">WhatsApp</a>
-  </div>
-</div>
-
-<!-- HERO -->
-<div class="container hero">
-  <h1>We build AI-powered systems that generate results</h1>
-  <p>Websites, chatbots and integrations designed to scale your business.</p>
-
-  <a class="btn" href="https://wa.me/5511945178914" target="_blank">
-    Chat on WhatsApp
-  </a>
-</div>
-
-<!-- CARDS -->
-<div class="section container">
-  <h2>What we deliver</h2>
-
-  <div class="cards">
-
-    <div class="card-box highlight">
-      <span class="tag">Experience & Innovation</span>
-      <h3>Building smart solutions</h3>
-    </div>
-
-    <div class="card-box">
-      <div class="icon">⚡</div>
-      <h3>Market Expertise</h3>
-      <p>We combine technology and strategy to deliver efficient digital solutions.</p>
-    </div>
-
-    <div class="card-box">
-      <div class="icon">🏢</div>
-      <h3>Scalable Structure</h3>
-      <p>Systems built to grow with your business from day one.</p>
-    </div>
-
-    <div class="card-box">
-      <div class="icon">🤖</div>
-      <h3>Artificial Intelligence</h3>
-      <p>Automation and AI to improve customer experience and performance.</p>
-    </div>
-
-  </div>
-</div>
-
-<!-- ABOUT -->
-<div id="about" class="section container">
-  <h2>About us</h2>
   <p>
-    We are a technology-driven team focused on building scalable digital solutions.
-    Our goal is simple: help businesses grow using automation, AI and smart systems.
+    Estamos estruturando nossa plataforma para oferecer soluções completas em suprimentos industriais e corporativos.
   </p>
-</div>
 
-<!-- CONTACT -->
-<div id="contact" class="section container">
-  <h2>Contact us</h2>
-
-  <p>mcbconsultingagency@gmail.com</p>
-
-  <a class="btn" href="https://wa.me/5511945178914" target="_blank">
-    Talk to us now
+  <a href="https://wa.me/5511978274853" target="_blank" class="btn">
+    Falar no WhatsApp
   </a>
+
+  <div class="domain">cellerissupply.com</div>
 </div>
 
-<!-- FOOTER -->
-<footer class="footer">
+<!-- 🔥 Botão flutuante -->
+<a href="https://wa.me/5511978274853" target="_blank" class="whatsapp-float">
+  <svg viewBox="0 0 32 32">
+    <path d="M19.11 17.39c-.29-.15-1.7-.84-1.96-.94-.26-.1-.45-.15-.64.15s-.74.94-.91 1.13c-.17.19-.34.21-.63.07-.29-.15-1.22-.45-2.32-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.15-.64-1.54-.88-2.11-.23-.56-.47-.49-.64-.5l-.55-.01c-.19 0-.51.07-.77.36s-1.01.99-1.01 2.42 1.04 2.81 1.19 3.01c.15.19 2.05 3.13 4.96 4.39.69.3 1.23.48 1.65.61.69.22 1.32.19 1.82.12.56-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.34zM16.03 3C9.39 3 4 8.39 4 15.03c0 2.64.85 5.08 2.29 7.07L4 29l7.14-2.25c1.92 1.05 4.12 1.65 6.36 1.65 6.64 0 12.03-5.39 12.03-12.03S22.67 3 16.03 3zm0 21.84c-2.01 0-3.97-.54-5.67-1.56l-.41-.24-4.23 1.33 1.38-4.11-.27-.42a9.79 9.79 0 01-1.51-5.21c0-5.43 4.42-9.85 9.85-9.85s9.85 4.42 9.85 9.85-4.42 9.85-9.85 9.85z"/>
+  </svg>
+</a>
 
-  <div class="footer-container">
-
-    <div class="footer-col">
-      <img src="img/mcb_logo.png" class="footer-logo">
-      <p>We build digital solutions that transform businesses.</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Navigation</h4>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-    <div class="footer-col">
-      <h4>Services</h4>
-      <p>Web Development</p>
-      <p>Automation</p>
-      <p>AI Solutions</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p>mcbconsultingagency@gmail.com</p>
-      <a href="https://wa.me/5511945178914">WhatsApp</a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>© 2026 MCB Consulting</p>
-  </div>
-
-</footer>
-
-<!-- WHATS FLOAT -->
-<a class="whatsapp-float" href="https://wa.me/5511945178914" target="_blank">💬</a>
-
-<script src="script.js"></script>
+<div class="footer">
+  © 2026 Celleris Supply
+</div>
 
 </body>
 </html>
