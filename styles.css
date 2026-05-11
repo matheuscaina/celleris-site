@@ -11,6 +11,10 @@
   --border: #1a1a25;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* RESET */
 * {
   margin: 0;
@@ -44,7 +48,7 @@ header {
 }
 
 .logo img {
-  height: 36px;
+  height: 72px;
 }
 
 .menu a {
@@ -338,6 +342,12 @@ backdrop-filter: blur(2px);
   -webkit-text-fill-color: transparent;
 }
 
+.card .icon svg {
+  width: 34px;
+  height: 34px;
+  stroke: #93c5fd;
+}
+
 /* TITULO */
 .card h3 {
   font-size: 20px;
@@ -353,7 +363,7 @@ backdrop-filter: blur(2px);
 /* ATUAÇÃO */
 #atuacao {
   scroll-margin-top: 100px;
-   padding-bottom: 100px;
+  padding-bottom: 20px;
 }
 
 .section-title {
@@ -417,12 +427,82 @@ backdrop-filter: blur(2px);
 
   color: #cbd5e1;
   transition: 0.25s;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.item svg {
+  width: 16px;
+  height: 16px;
+  stroke: #7c3aed;
+  flex-shrink: 0;
+  transition: 0.25s;
 }
 
 .item:hover {
   background: rgba(124,58,237,0.15);
   color: white;
   transform: translateX(6px);
+}
+
+.item:hover svg {
+  stroke: #a78bfa;
+}
+
+/* SOB DEMANDA */
+.sob-demanda-card {
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 16px;
+  background: linear-gradient(160deg, #0f0f1f, #08080f);
+  border: 1px solid rgba(124,58,237,0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.sob-demanda-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 1px;
+  background: linear-gradient(120deg, #8b5cf6, #3b82f6);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.4;
+}
+
+.sob-demanda-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.sob-demanda-header svg {
+  width: 26px;
+  height: 26px;
+  stroke: #a78bfa;
+}
+
+.sob-demanda-header h3 {
+  font-size: 22px;
+  background: linear-gradient(90deg, #c4b5fd, #60a5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.sob-demanda-card > p {
+  color: #94a3b8;
+  line-height: 1.8;
+  font-size: 15px;
+  max-width: 900px;
 }
 
 /* FOOTER */
@@ -454,9 +534,26 @@ backdrop-filter: blur(2px);
   margin-bottom: 15px;
 }
 
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer h4 {
+  color: var(--text);
+  margin-bottom: 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .footer p,
 .footer li {
   color: #94a3b8;
+  font-size: 14px;
 }
 
 .footer-bottom {
@@ -473,7 +570,7 @@ backdrop-filter: blur(2px);
   width: 60px;
   height: 60px;
 
-  background: #25D366 url('https://cdn-icons-png.flaticon.com/512/733/733585.png') center/60% no-repeat;
+  background: #25D366;
   border-radius: 50%;
 
   display: flex;
@@ -482,10 +579,15 @@ backdrop-filter: blur(2px);
 
   box-shadow:
     0 10px 30px rgba(0,0,0,0.5),
-    0 0 15px rgba(37,211,102,0.5); /* glow leve */
+    0 0 15px rgba(37,211,102,0.5);
 
   transition: all 0.3s ease;
   z-index: 999;
+}
+
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
 }
 
 /* HOVER MAIS PREMIUM */

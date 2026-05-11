@@ -7,6 +7,7 @@
   <title>Celleris Supply</title>
 
   <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         e compromisso real com prazos.
       </p>
 
-      <a href="#contato" class="btn-primary">
+      <a href="https://wa.me/5511978274853" target="_blank" rel="noopener" class="btn-primary">
         Solicitar orçamento
       </a>
     </div>
@@ -57,7 +58,7 @@
     <div class="container sobre-grid">
 
       <div class="sobre-img-box">
-        <img src="img/industrial.jpg" class="sobre-img">
+        <img src="img/sobre.png" class="sobre-img">
       </div>
 
       <div class="sobre-content">
@@ -99,7 +100,7 @@
       </div>
 
       <div class="card premium">
-        <div class="icon">📊</div>
+        <div class="icon"><i data-lucide="timer"></i></div>
         <h3>Eficiência</h3>
         <p>Centralização que reduz custo e tempo.</p>
       </div>
@@ -118,24 +119,41 @@
         <div class="atuacao-card">
           <h3>Suprimentos Industriais</h3>
           <div class="atuacao-list">
-            <div class="item">⚙️ Manutenção</div>
-            <div class="item">🛠 Ferramentas</div>
-            <div class="item">🔩 Fixação</div>
-            <div class="item">🤖 Automação</div>
-            <div class="item">🦺 EPIs</div>
+            <div class="item"><i data-lucide="wrench"></i> Manutenção, Reparo e Operações</div>
+            <div class="item"><i data-lucide="hammer"></i> Ferramentas, Ferragens e Acessórios</div>
+            <div class="item"><i data-lucide="zap"></i> Componentes e Material Elétrico</div>
+            <div class="item"><i data-lucide="ruler"></i> Instrumentos de Medição</div>
+            <div class="item"><i data-lucide="droplets"></i> Hidráulica</div>
+            <div class="item"><i data-lucide="wind"></i> Pneumática</div>
+            <div class="item"><i data-lucide="link"></i> Fixação</div>
+            <div class="item"><i data-lucide="cpu"></i> Automação</div>
+            <div class="item"><i data-lucide="flame"></i> Cozinha Industrial</div>
+            <div class="item"><i data-lucide="shield"></i> EPIs, Segurança e Proteção</div>
           </div>
         </div>
 
         <div class="atuacao-card">
           <h3>Suprimentos Corporativos</h3>
           <div class="atuacao-list">
-            <div class="item">📄 Materiais de escritório</div>
-            <div class="item">🖨 Toners</div>
-            <div class="item">🏷 Etiquetas</div>
-            <div class="item">🪑 Mobiliário</div>
+            <div class="item"><i data-lucide="file-text"></i> Escritório e Papelaria</div>
+            <div class="item"><i data-lucide="tag"></i> Etiquetas e Bobinas Térmicas</div>
+            <div class="item"><i data-lucide="printer"></i> Toners e Cartuchos</div>
+            <div class="item"><i data-lucide="package"></i> Mobiliário e Armazenamento</div>
+            <div class="item"><i data-lucide="sparkles"></i> Limpeza e Manutenção</div>
+            <div class="item"><i data-lucide="scroll"></i> Dispensers e Papéis Sanitários</div>
+            <div class="item"><i data-lucide="box"></i> Descartáveis e Utensílios</div>
+            <div class="item"><i data-lucide="monitor"></i> Equipamentos Eletrônicos</div>
           </div>
         </div>
 
+      </div>
+
+      <div class="sob-demanda-card">
+        <div class="sob-demanda-header">
+          <i data-lucide="layers"></i>
+          <h3>Soluções Sob Demanda</h3>
+        </div>
+        <p>Não nos limitamos somente ao portfólio. Nosso foco está em compreender a necessidade de cada cliente para identificar, localizar e fornecer as soluções mais adequadas para sua operação. Atuamos de forma flexível, estratégica e orientada à demanda, conectando empresas aos suprimentos certos com agilidade e eficiência.</p>
       </div>
 
     </div>
@@ -154,14 +172,17 @@
         <ul>
           <li>Industrial</li>
           <li>Corporativo</li>
-          <li>Automação</li>
+          <li>Sob demanda</li>
         </ul>
       </div>
 
       <div>
-        <h4>Contato</h4>
-        <p>WhatsApp: (11) 97827-4853</p>
-        <p>contato@cellerissupply.com</p>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#atuacao">Atuação</a></li>
+          <li><a href="https://wa.me/5511978274853" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
       </div>
 
     </div>
@@ -171,7 +192,11 @@
     </div>
   </footer>
 
-  <a href="https://wa.me/5511978274853" class="whatsapp-float"></a>
+  <a href="https://wa.me/5511978274853" target="_blank" rel="noopener" class="whatsapp-float">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
 
   <!-- JS -->
   <script>
@@ -190,6 +215,9 @@
       });
     });
 
+    /* ICONS */
+    lucide.createIcons();
+
     /* LOADER */
     window.addEventListener("load", () => {
       const loader = document.getElementById("loader");
@@ -200,16 +228,6 @@
       }, 400);
     });
 
-    /* DARK/LIGHT */
-    const toggle = document.getElementById("themeToggle");
-
-    toggle.addEventListener("click", () => {
-      document.body.classList.toggle("light");
-
-      toggle.innerText = document.body.classList.contains("light")
-        ? "☀️"
-        : "🌙";
-    });
 
   </script>
 
